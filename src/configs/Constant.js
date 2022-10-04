@@ -1,0 +1,107 @@
+export const CONSTANT = {
+    USE_TEST_NET: false, // WARNING, SHOULD BE false BEFORE COMMIT CODE
+  
+    DEFAULT_TITLE: 'All-in-one crypto ecosystem, the next tracking dashboard generation',
+    DELAY_TIME: 1000 * 10, // 10 seconds
+    DELAY_TIME_TOKEN_DEX_GURU: 1000 * 60, // 1 minute
+    DELAY_TIME_TOKEN_COINGECKO: 1000 * 60, // 1 minute
+    DELAY_TIME_TOKEN_BSCSCAN_POLYGONSCAN: 1000 * 60, // 1 minute
+    DELAY_TIME_WALLET_BALANCES: 1000 * 30, // 30 seconds
+    DELAY_TIME_TRANSACTIONS: 1000 * 60 * 3, // 3 minutes
+  
+    MAXIMUM_TOKEN_IN_A_WATCHLIST: 10,
+    MAXIMUM_ALERT_OF_A_TOKEN: 5,
+    MAXIMUM_ALERT_OF_ALL_TOKEN: 20,
+  
+    DEFAULT_CACHE_TIME: 1000 * 60 * 60 * 24, // 1 day
+  
+    BSCSCAN_API_KEY: 'QWDTST8VFV4QCNKYG776PHIF27QPP84SGG',
+    POLYGONSCAN_API_KEY: 'Y9X6AF2KVBWR7BQMGKD2BB4WTYMMGN35QR',
+    ETHERSCAN_API_KEY: 'N1PDVVWKAWXNK1Y7IJC6GJI9CVZNEWBGEH',
+    COVALENTHQ_API_KEY: 'ckey_d19471b9dd164dd2b6f2ce57cc9',
+  
+    BNB_DECIMALS: 18,
+  
+    PRIVATE_SALE_MIN_BUY_BNB: 1,
+    PRIVATE_SALE_MAX_BUY_BNB: 6,
+    PRIVATE_SALE_TOKEN_PER_BNB: 400000,
+  
+    PRESALE_SALE_MIN_BUY_BNB: 0.1,
+    PRESALE_SALE_MAX_BUY_BNB: 2,
+    PRESALE_SALE_TOKEN_PER_BNB: 360000,
+    PRESALE_REWARD_PERCENT: 0.005,
+    PRESALE_REWARD_PERCENT_1: 0.002,
+    PRESALE_REWARD_PERCENT_2: 0.0015,
+    PRESALE_REWARD_PERCENT_3: 0.001,
+    PRESALE_REWARD_PERCENT_4: 0.0005,
+  
+    MAIN_NET: {
+      BSC_CHAIN_NAME: 'Smart Chain',
+      BSC_CHAIN_ID: '0x38', // 56
+      BSC_CHAIN_URL: 'https://bsc-dataseed.binance.org/',
+      BSC_CHAIN_EXPLORER_URL: 'https://bscscan.com/',
+  
+      MEO_CONTRACT_ADDRESS: '0x7dff85eeb321957a429fa220ec2664774240b766',
+      DEPLOYER_WALLET: '0xdAc833A4fBb2F7173C498646981774547c17D43a',
+      PRIVATE_SALE_WALLET: '0xdE917EE96B06d89524c1F5ce19eC05aa7F770b75',
+      DEV_WALLET: '0x418b14278D6AF4B4ffe3b7263cdE988A20862cFd',
+      PRESALE_WALLET: '0x7Efe64b4fF417B3616412bb4C114a244b5B1a376',
+    },
+  
+    TEST_NET: {
+      BSC_CHAIN_NAME: 'Smart Chain - Testnet',
+      BSC_CHAIN_ID: '0x61', // 97
+      BSC_CHAIN_URL: 'https://data-seed-prebsc-1-s1.binance.org:8545/',
+      BSC_CHAIN_EXPLORER_URL: 'https://testnet.bscscan.com/',
+  
+      MEO_CONTRACT_ADDRESS: '0x0CaaCF0B14F2e9851B911416362F3Ca34bd5eaB8',
+      PRIVATE_SALE_WALLET: '0xdA814E3718C167738fC1a365CC4C0ad556354b0A',
+    },
+  
+    BNB_ADDRESS: '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c',
+  
+    TIME_SCALE: {
+      1: {
+        INIT_TERM: 441660, // 88380
+        UPDATE_TERM: 600,
+      },
+      5: {
+        INIT_TERM: 883260, // 441660
+        UPDATE_TERM: 3000,
+      },
+      10: {
+        INIT_TERM: 883260,
+        UPDATE_TERM: 6000,
+      },
+      30: {
+        INIT_TERM: 2649660,
+        UPDATE_TERM: 18000,
+      },
+      60: {
+        INIT_TERM: 5299260,
+        UPDATE_TERM: 36000,
+      },
+      240: {
+        INIT_TERM: 21196860,
+        UPDATE_TERM: 144000,
+      },
+      720: {
+        INIT_TERM: 63590460,
+        UPDATE_TERM: 432000,
+      },
+      1440: {
+        INIT_TERM: 34300860,
+        UPDATE_TERM: 864000,
+      },
+      10080: {
+        INIT_TERM: 29030398,
+        UPDATE_TERM: 6048000,
+      },
+    }
+  };
+  
+  export const MESSAGE = {
+    MAXIMUM_TOKEN_IN_A_WATCHLIST: `A maximum of ${CONSTANT.MAXIMUM_TOKEN_IN_A_WATCHLIST} tokens can be created for your Watchlist - Portfolio`,
+    MAXIMUM_ALERT_OF_A_TOKEN: `A maximum of ${CONSTANT.MAXIMUM_ALERT_OF_A_TOKEN} alerts can be created for a token.`,
+    MAXIMUM_ALERT_OF_ALL_TOKEN: `A maximum of ${CONSTANT.MAXIMUM_ALERT_OF_ALL_TOKEN} alerts can be created for all tokens.`,
+  }
